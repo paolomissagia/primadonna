@@ -4,12 +4,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Photo from "../assets/hero.jpg";
 import Logo from "../assets/logo.png";
 import { scrollTo } from "../utils/scrollToView";
-
-const navigation = [
-  { name: "home", id: "home" },
-  { name: "about", id: "about" },
-  { name: "catalogue", id: "catalogue" },
-];
+import { navigation } from "../data/Navigation";
 
 export default function Hero() {
   return (

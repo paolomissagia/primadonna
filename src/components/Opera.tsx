@@ -1,5 +1,4 @@
 export default function Example({ allOperas }: { allOperas: Array<object> }) {
-    console.log(allOperas);
     return (
       <div className="max-w-2xl mx-auto py-16 px-4 sm:py-16 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="grid grid-cols-2 gap-y-10 sm:grid-cols-3 gap-x-6 lg:grid-cols-4 xl:grid-cols-5 xl:gap-x-8">
