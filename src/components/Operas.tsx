@@ -10,10 +10,14 @@ export default function Operas() {
   const [isReady, setReady] = useState(false);
 
   const handleOperas = async () => {
-    const res = await fetch("/api/operas");
-    const data = await res.json();
-    setOperas(data.data);
-    setReady(true);
+    try {
+      const res = await fetch("https://primadonna-backend.vercel.app/opera");
+      const data = await res.json();
+      setOperas(data.data);
+      setReady(true);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   useEffect(() => {
