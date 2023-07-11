@@ -11,10 +11,12 @@ export default function Operas() {
 
   const handleOperas = async () => {
     try {
-      const res = await fetch("https://primadonna-backend.vercel.app/opera");
-      const data = await res.json();
-      setOperas(data.data);
-      setReady(true);
+      const res = await fetch("https://primadonna-backend.onrender.com/api/operas");
+      if (res.status === 200) {
+        const data = await res.json();
+        setOperas(data);
+        setReady(true);
+      }
     } catch (error) {
       console.log(error);
     }
