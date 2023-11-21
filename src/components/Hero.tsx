@@ -1,10 +1,10 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Photo from "../assets/hero.jpg";
-import Logo from "../assets/logo.png";
+import Photo from "../assets/images/hero.jpg";
+import Logo from "../assets/images/logo.png";
 import { scrollTo } from "../utils/scrollToView";
-import { navigation } from "../data/Navigation";
+import { navigation } from "../assets/data/Navigation";
 
 export default function Hero() {
   return (

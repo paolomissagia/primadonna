@@ -1,10 +1,10 @@
-import Caruso from "../assets/singers/caruso.png";
-import Gedda from "../assets/singers/gedda.png";
-import Beniamino from "../assets/singers/beniamino.png";
-import Jussi from "../assets/singers/jussi.jpg";
-import Lanza from "../assets/singers/lanza.jpg";
-import Monaco from "../assets/singers/monaco.jpg";
-import Pavarotti from "../assets/singers/pavarotti.jpg";
+import Caruso from "../assets/images/singers/caruso.png";
+import Gedda from "../assets/images/singers/gedda.png";
+import Beniamino from "../assets/images/singers/beniamino.png";
+import Jussi from "../assets/images/singers/jussi.jpg";
+import Lanza from "../assets/images/singers/lanza.jpg";
+import Monaco from "../assets/images/singers/monaco.jpg";
+import Pavarotti from "../assets/images/singers/pavarotti.jpg";
 import { scrollTo } from "../utils/scrollToView";
 
 export default function Catalogue() {

@@ -1,4 +1,9 @@
-export const features = [
+interface Feature {
+  name: string,
+  description: string
+}
+
+export const features: Feature[] = [
   { name: "origin", description: "italy" },
   { name: "creation", description: "sixteenth century" },
   { name: "format", description: "music, performing and singing" },

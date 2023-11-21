@@ -1,4 +1,4 @@
-import { features } from "../data/Features";
+import { features } from "../assets/data/Features";
   
   export default function About() {
     return (
