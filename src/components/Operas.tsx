@@ -1,30 +1,11 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import Opera from "./Opera";
-
+import { operas } from "../assets/data/Operas";
 
 export default function Operas() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
-  const [isOperas, setOperas] = useState(null);
-  const [isReady, setReady] = useState(false);
-
-  const handleOperas = async () => {
-    try {
-      const res = await fetch("https://primadonna-backend.onrender.com/api/operas");
-      if (res.status === 200) {
-        const data = await res.json();
-        setOperas(data);
-        setReady(true);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  useEffect(() => {
-    handleOperas();
-  }, []);
 
   return (
     <div className="bg-white min-h-screen">
@@ -98,11 +79,7 @@ export default function Operas() {
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-8 gap-y-10">
               <div className="lg:col-span-4">
                 <div className="border-4 border-dashed border-gray-200 rounded-lg h-[45rem] overflow-scroll">
-                  {isReady ? (
-                    <Opera allOperas={isOperas as any} />
-                  ) : (
-                    <div>Loading...</div>
-                  )}
+                  <Opera allOperas={operas} />
                 </div>
               </div>
             </div>
